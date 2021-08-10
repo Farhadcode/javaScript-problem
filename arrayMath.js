@@ -70,3 +70,31 @@ console.log(totalSum);
 }
 const result1 = smallElement(priceList);
 console.log(result1);
+
+const friends = ['farhad','fardin','mukta','evanRakitis','eva','me'];
+function bigFriend(friends){
+    let  myfriend = friends[0];
+    for(let i= 0; i<friends.length; i++){
+        const largfriend = friends[i];
+        if( largfriend < myfriend){
+            myfriend = largfriend
+        }
+    }
+    return myfriend;
+}
+const bigBoos = bigFriend(friends);
+console.log(bigBoos);
+
+function smallFriend(friends){
+    let  myfriend = friends[0];
+    for(let i= 0; i<friends.length; i++){
+        const largfriend = friends[i];
+        if( largfriend > myfriend){
+            myfriend = largfriend
+        }
+    }
+    return myfriend;
+}
+const bacchaFriend = smallFriend(friends);
+console.log(bacchaFriend);
+

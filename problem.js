@@ -5,7 +5,7 @@
 function seerToMoon(seer){
     let moonCalculation =  seer / 40;
 
-      if(typeof seer != 'number'){
+      if(typeof seer != 'seer'){
         return 'please give a number';
       }
       if(seer <= 0){
@@ -71,7 +71,7 @@ function deliveryCost(quantity){
      if(typeof quantity != 'number'){
         return 'please give a number not string';
       }
-    if( quantity<=1){
+    if( quantity<=0){
         return "minimum delivery quantity 1"                                     
     }
    
@@ -96,7 +96,7 @@ function deliveryCost(quantity){
 
     }
 }
- const yourDeliveryCost = deliveryCost(450);
+ const yourDeliveryCost = deliveryCost(1);
  console.log(yourDeliveryCost);
 
 
