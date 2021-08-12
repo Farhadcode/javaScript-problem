@@ -26,14 +26,18 @@ function searchProducts(products , searchText){
 }
 const matched  = searchProducts(products);
 console.log(matched);
+ 
+// the for / of loop
 
-// for(const product of products ){
-//     if(product.price < 10000){
-//         break;
-//     }
+//for (variable of iterable)
 
-//     console.log(product);
-// }
+for(const product of products ){
+    if(product.price < 10000){
+        break;
+    }
+
+    console.log(product);
+}
 
 for(const richeMan of products){
     if (richeMan.price < 10000){
